@@ -494,6 +494,7 @@ footer .fl span { color:var(--neon); }
 @media(max-width:900px) {
   nav { padding:14px 20px; }
   .nav-links { display:none; }
+  .nav-mobile-btn { display:flex; }
   section { padding:80px 20px; }
   .hero { padding:120px 20px 60px; }
   .hero-stats { flex-direction:column; }
@@ -518,6 +519,15 @@ footer .fl span { color:var(--neon); }
 <!-- NAV -->
 <nav>
   <div class="nav-logo">AT<span>.</span></div>
+  <button class="nav-mobile-btn" onclick="document.getElementById('mobileMenu').style.display=document.getElementById('mobileMenu').style.display==='flex'?'none':'flex'" style="display:none;background:none;border:1px solid var(--neon);color:var(--neon);padding:8px 14px;font-family:'Share Tech Mono',monospace;font-size:0.7rem;cursor:pointer;letter-spacing:2px;">MENU</button>
+  <div id="mobileMenu" style="display:none;position:fixed;top:60px;left:0;right:0;background:rgba(2,8,24,0.98);flex-direction:column;padding:20px;gap:16px;z-index:99;border-bottom:1px solid rgba(0,255,231,0.15);">
+    <a href="#about" style="color:var(--muted);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;" onclick="this.parentElement.style.display='none'">ABOUT</a>
+    <a href="#skills" style="color:var(--muted);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;" onclick="this.parentElement.style.display='none'">SKILLS</a>
+    <a href="#projects" style="color:var(--muted);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;" onclick="this.parentElement.style.display='none'">PROJECTS</a>
+    <a href="#certs" style="color:var(--muted);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;" onclick="this.parentElement.style.display='none'">CERTS</a>
+    <a href="#contact" style="color:var(--muted);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;" onclick="this.parentElement.style.display='none'">CONTACT</a>
+    <a href="https://github.com/Abd-Abdullah83" target="_blank" style="color:var(--neon);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:0.8rem;letter-spacing:2px;">GITHUB ↗</a>
+  </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -550,6 +560,7 @@ footer .fl span { color:var(--neon); }
     <div class="hero-cta">
       <a href="#projects" class="btn btn-neon">Explore Projects</a>
      <a href="#contact" class="btn btn-outline">Contact Me</a>
+     <a href="resume.pdf" download class="btn btn-outline">Download CV ↓</a>
     </div>
   </div>
   <div class="hero-photo">
@@ -569,7 +580,7 @@ footer .fl span { color:var(--neon); }
   <div class="about-grid">
     <div class="about-text reveal">
       <p>I'm a first-year <strong>BS Data Science</strong> student at FAST National University of Computer and Emerging Sciences, Lahore. With a strong command of C++ and OOP, I independently design and ship complex software projects.</p>
-      <p>From building a <strong>full chess engine with an AI opponent</strong> to implementing a <strong>3-level parking simulator using raw pointers (char****)** </strong>, I push boundaries every semester. I've earned <strong>10+ certifications</strong> in AI, Data Science, Cybersecurity, and Entrepreneurship.</p>
+      <p>From building a <strong>full chess engine with an AI opponent</strong> to implementing a <strong>3-level parking simulator using raw pointers (char****) </strong>, I push boundaries every semester. I've earned <strong>10+ certifications</strong> in AI, Data Science, Cybersecurity, and Entrepreneurship.</p>
       <p>My mission: leverage data and code to <strong>build a company of lasting impact</strong>.</p>
       <div class="about-info-grid">
         <div class="info-chip"><span class="info-chip-icon">📍</span><div class="info-chip-text"><strong>Location</strong>Sialkot → Lahore, PK</div></div>
@@ -792,8 +803,8 @@ C++, Python, SFML, OOP, DSA, AI...<br><br>
 
 <!-- FOOTER -->
 <footer>
-  <div class="fl">© 2026 <span>Abdullah Tahir</span> — All Rights Reserved</div>
-  <div class="fl">FAST NUCES Lahore · BS Data Science · <span>2025–2029</span></div>
+  <<div class="fl">© 2026 <span>Abdullah Tahir</span> — All Rights Reserved</div>
+  <div class="fl">FAST NUCES Lahore · BS Data Science · <span>2025–2029</span> · <a href="https://linkedin.com/in/abdullah-tahir-ds" target="_blank" style="color:var(--neon);text-decoration:none;">LinkedIn ↗</a></div>
 </footer>
 
 <script>
