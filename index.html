@@ -496,8 +496,14 @@ footer .fl span { color:var(--neon); }
   .nav-links { display:none; }
   .nav-mobile-btn { display:flex; }
   section { padding:80px 20px; }
-  .hero { padding:120px 20px 60px; }
-  .hero-stats { flex-direction:column; }
+  .hero { padding:100px 20px 60px; }
+  .hero-inner { flex-direction:column; gap:32px; }
+  .hero-content { width:100%; }
+  .hero-photo { width:100%; display:flex; justify-content:center; order:-1; }
+  .hero-photo > div { width:220px !important; height:260px !important; }
+  .hero-stats { display:grid; grid-template-columns:1fr 1fr; }
+  .hero-cta { flex-direction:column; }
+  .hero-cta .btn { text-align:center; justify-content:center; width:100%; }
   .about-grid, .contact-wrap { grid-template-columns:1fr; }
   .bar-skills { grid-template-columns:1fr; }
   footer { padding:24px 20px; flex-direction:column; gap:8px; }
