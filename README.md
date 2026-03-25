@@ -4,8 +4,9 @@
 
 
 ---
+
 ## About
----
+
 This is my personal portfolio website built from scratch using pure HTML, CSS, and JavaScript — no frameworks, no templates. It showcases my projects, skills, certifications, and contact information!!.
 
 ---
