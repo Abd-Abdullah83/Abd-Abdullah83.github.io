@@ -2,11 +2,11 @@
 
 > Personal portfolio website — live at **[abd-abdullah83.github.io](https://abd-abdullah83.github.io)**
 
+
 ---
-
 ## About
-
-This is my personal portfolio website built from scratch using pure HTML, CSS, and JavaScript — no frameworks, no templates. It showcases my projects, skills, certifications, and contact information.
+---
+This is my personal portfolio website built from scratch using pure HTML, CSS, and JavaScript — no frameworks, no templates. It showcases my projects, skills, certifications, and contact information!!.
 
 ---
 
