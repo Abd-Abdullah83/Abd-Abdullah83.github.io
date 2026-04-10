@@ -54,7 +54,7 @@
 01 ── Hero          Name · Role · Stats · CTA buttons
 02 ── About         Bio · Info chips · Education timeline
 03 ── Skills        Skill cards + animated proficiency bars
-04 ── Projects      7 projects — GitHub & live site links
+04 ── Projects      8 projects — GitHub & live site links
 05 ── Certifications  12 badges from Accenture, HP, DigiSkills & more
 06 ── Contact       Links · Status panel · Terminal widget
 ```
@@ -85,6 +85,7 @@ abd-abdullah83.github.io/
 | `05` | 🔢 **Sudoku** — Backtracking solver, hints, 3 difficulties | C++ · SFML | [GitHub ↗](https://github.com/Abd-Abdullah83/Sudoku) |
 | `06` | 🌐 **DigiSmart Lahore** — Digital literacy & PECA 2016 quiz | HTML · CSS · JS | [Live ↗](https://abd-abdullah83.github.io/digital-literacy) |
 | `07` | 💊 **MediPharm** — 10-page pharmacy SPA, DRAP compliance | HTML · CSS · JS | [Live ↗](https://abd-abdullah83.github.io/Pharmacy/) |
+| `08` | ✦ **Nova AI Assistant** — Gemini chat, weather, tasks, voice | HTML · CSS · JS | [Live ↗](https://abd-abdullah83.github.io/Nova/) |
 
 ---
 
@@ -129,7 +130,7 @@ GitHub Pages  Free static deployment
 
 | 🎓 CGPA | 📁 Projects | 🏅 Certificates | 🤖 AI Score |
 |:-------:|:-----------:|:---------------:|:-----------:|
-| **3.56** | **6+** | **12** | **93%** |
+| **3.56** | **8+** | **12** | **93%** |
 
 </div>
 
@@ -151,7 +152,7 @@ GitHub Pages  Free static deployment
 
 ## 👨‍💻 About Me
 
-I'm a first-year **BS Data Science** student at **FAST NUCES Lahore** (2025–2029). I build complex systems from scratch — chess engines with AI opponents, memory-managed parking simulators, full-stack web platforms, and more. Certified in AI, Data Analytics, Cybersecurity, and Entrepreneurship. Aspiring entrepreneur with a mission to build a company of lasting impact.
+I'm a first-year **BS Data Science** student at **FAST NUCES Lahore** (2025–2029). I build complex systems from scratch — chess engines with AI opponents, memory-managed parking simulators, full-stack web platforms, AI assistants, and more. Certified in AI, Data Analytics, Cybersecurity, and Entrepreneurship. Aspiring entrepreneur with a mission to build a company of lasting impact.
 
 ---
 
