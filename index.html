@@ -515,6 +515,23 @@ footer .fl span { color:var(--neon); }
   body { cursor:auto; }
   #cursor, #cursor-ring { display:none; }
 }
+  /* PROJECT FILTER TABS */
+.filter-tabs {
+  display:flex; gap:12px; flex-wrap:wrap; margin-bottom:40px;
+}
+.ftab {
+  font-family:'Share Tech Mono',monospace; font-size:0.72rem;
+  letter-spacing:2px; text-transform:uppercase;
+  padding:8px 22px; border-radius:30px; cursor:pointer;
+  border:1px solid rgba(0,255,231,0.2); background:transparent;
+  color:var(--muted); transition:all 0.25s;
+}
+.ftab:hover { border-color:var(--neon); color:var(--neon); }
+.ftab.active {
+  background:var(--neon); color:var(--bg);
+  border-color:var(--neon); box-shadow:0 0 20px rgba(0,255,231,0.35);
+}
+.proj-card.hidden { display:none; }
 </style>
 </head>
 <body>
