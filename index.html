@@ -190,6 +190,43 @@ nav {
   from{opacity:0;transform:translateY(40px)}
   to{opacity:1;transform:translateY(0)}
 }
+  /* INTRO SPLASH */
+#intro-splash {
+  position:fixed; inset:0; z-index:10000;
+  background:var(--bg);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:24px;
+  animation: splashOut 0.6s 1.8s ease forwards;
+  pointer-events:none;
+}
+@keyframes splashOut { to { opacity:0; visibility:hidden; } }
+.splash-logo {
+  font-family:'Oxanium',sans-serif; font-weight:800; font-size:4rem;
+  letter-spacing:8px; color:var(--neon);
+  text-shadow:0 0 40px var(--neon), 0 0 80px rgba(0,255,231,0.3);
+  animation: splashPulse 1.8s ease both;
+}
+@keyframes splashPulse {
+  0%{opacity:0;transform:scale(0.8);}
+  40%{opacity:1;transform:scale(1.05);}
+  100%{opacity:1;transform:scale(1);}
+}
+.splash-scan {
+  width:200px; height:1px;
+  background:linear-gradient(90deg, transparent, var(--neon), transparent);
+  animation: scanLine 1.8s ease both;
+}
+@keyframes scanLine {
+  0%{width:0;opacity:0;}
+  60%{width:200px;opacity:1;}
+  100%{width:200px;opacity:0.5;}
+}
+.splash-text {
+  font-family:'Share Tech Mono',monospace; font-size:0.72rem;
+  color:var(--muted); letter-spacing:4px;
+  animation: splashFadeIn 1.8s 0.3s ease both;
+}
+@keyframes splashFadeIn { from{opacity:0} to{opacity:1} }
 
 /* ===== SECTION STYLES ===== */
 section { padding:120px 64px; position:relative; z-index:1; }
@@ -535,20 +572,11 @@ footer .fl span { color:var(--neon); }
 </style>
 </head>
 <body>
-<!-- SPLASH SCREEN -->
-<div id="splash" style="
-  position:fixed;inset:0;z-index:99999;
-  background:var(--bg);display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:20px;
-  transition:opacity 0.6s ease;">
-  <div style="font-family:'Oxanium',sans-serif;font-weight:800;font-size:2.5rem;
-    color:var(--neon);letter-spacing:6px;text-shadow:0 0 30px var(--neon);">AT.</div>
-  <div style="width:160px;height:2px;background:rgba(0,255,231,0.1);border-radius:2px;overflow:hidden;">
-    <div id="splash-bar" style="height:100%;width:0;background:var(--neon);
-      box-shadow:0 0 10px var(--neon);transition:width 1.2s ease;"></div>
-  </div>
-  <div style="font-family:'Share Tech Mono',monospace;font-size:0.7rem;
-    color:var(--muted);letter-spacing:3px;">LOADING PORTFOLIO...</div>
+<!-- INTRO SPLASH -->
+<div id="intro-splash">
+  <div class="splash-logo">AT.</div>
+  <div class="splash-scan"></div>
+  <div class="splash-text">INITIALIZING PORTFOLIO...</div>
 </div>
 <!-- CURSOR -->
 <div id="cursor"></div>
@@ -1011,13 +1039,7 @@ document.addEventListener('mousemove', e=>{
     if(d<100){ p.vx-=dx*0.0008; p.vy-=dy*0.0008; }
   });
 });
-// ===== SPLASH SCREEN =====
-setTimeout(() => document.getElementById('splash-bar').style.width = '100%', 50);
-setTimeout(() => {
-  const splash = document.getElementById('splash');
-  splash.style.opacity = '0';
-  setTimeout(() => splash.style.display = 'none', 600);
-}, 1500);
+
 // ===== SCROLL REVEAL =====
 const reveals = document.querySelectorAll('.reveal');
 const revObs = new IntersectionObserver((entries) => {
