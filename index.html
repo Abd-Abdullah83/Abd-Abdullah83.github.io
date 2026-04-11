@@ -1046,6 +1046,15 @@ const statObs = new IntersectionObserver((entries)=>{
     }
   });
 },{threshold:0.5});
+  // ===== PROJECT FILTER =====
+function filterProjects(cat) {
+  document.querySelectorAll('.ftab').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.proj-card').forEach(card => {
+    const cats = card.dataset.cat || '';
+    card.classList.toggle('hidden', cat !== 'all' && !cats.includes(cat));
+  });
+}
 statObs.observe(document.querySelector('.hero-stats'));
 </script>
 </body>
