@@ -535,7 +535,21 @@ footer .fl span { color:var(--neon); }
 </style>
 </head>
 <body>
-
+<!-- SPLASH SCREEN -->
+<div id="splash" style="
+  position:fixed;inset:0;z-index:99999;
+  background:var(--bg);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:20px;
+  transition:opacity 0.6s ease;">
+  <div style="font-family:'Oxanium',sans-serif;font-weight:800;font-size:2.5rem;
+    color:var(--neon);letter-spacing:6px;text-shadow:0 0 30px var(--neon);">AT.</div>
+  <div style="width:160px;height:2px;background:rgba(0,255,231,0.1);border-radius:2px;overflow:hidden;">
+    <div id="splash-bar" style="height:100%;width:0;background:var(--neon);
+      box-shadow:0 0 10px var(--neon);transition:width 1.2s ease;"></div>
+  </div>
+  <div style="font-family:'Share Tech Mono',monospace;font-size:0.7rem;
+    color:var(--muted);letter-spacing:3px;">LOADING PORTFOLIO...</div>
+</div>
 <!-- CURSOR -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
@@ -965,6 +979,7 @@ function drawParticles(){
       }
     }
   }
+  
   // Dots
   particles.forEach(p => {
     ctx.beginPath();
@@ -988,7 +1003,13 @@ document.addEventListener('mousemove', e=>{
     if(d<100){ p.vx-=dx*0.0008; p.vy-=dy*0.0008; }
   });
 });
-
+// ===== SPLASH SCREEN =====
+setTimeout(() => document.getElementById('splash-bar').style.width = '100%', 50);
+setTimeout(() => {
+  const splash = document.getElementById('splash');
+  splash.style.opacity = '0';
+  setTimeout(() => splash.style.display = 'none', 600);
+}, 1500);
 // ===== SCROLL REVEAL =====
 const reveals = document.querySelectorAll('.reveal');
 const revObs = new IntersectionObserver((entries) => {
@@ -1055,6 +1076,37 @@ function filterProjects(cat) {
     card.classList.toggle('hidden', cat !== 'all' && !cats.includes(cat));
   });
 }
+  <!-- SCROLL TO TOP -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
+  position:fixed;bottom:32px;right:32px;z-index:200;
+  width:46px;height:46px;border-radius:50%;
+  background:transparent;border:1px solid rgba(0,255,231,0.3);
+  color:var(--neon);font-size:1.2rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transform:translateY(10px);
+  transition:all 0.3s;
+  box-shadow:0 0 16px rgba(0,255,231,0.15);">↑</button>
+    // ===== SCROLL TO TOP BUTTON =====
+const scrollTopBtn = document.getElementById('scroll-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    scrollTopBtn.style.opacity = '1';
+    scrollTopBtn.style.transform = 'translateY(0)';
+  } else {
+    scrollTopBtn.style.opacity = '0';
+    scrollTopBtn.style.transform = 'translateY(10px)';
+  }
+});
+scrollTopBtn.addEventListener('mouseenter', () => {
+  scrollTopBtn.style.background = 'var(--neon)';
+  scrollTopBtn.style.color = 'var(--bg)';
+  scrollTopBtn.style.boxShadow = '0 0 24px rgba(0,255,231,0.5)';
+});
+scrollTopBtn.addEventListener('mouseleave', () => {
+  scrollTopBtn.style.background = 'transparent';
+  scrollTopBtn.style.color = 'var(--neon)';
+  scrollTopBtn.style.boxShadow = '0 0 16px rgba(0,255,231,0.15)';
+});
 statObs.observe(document.querySelector('.hero-stats'));
 </script>
 </body>
