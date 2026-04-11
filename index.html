@@ -3,9 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah Tahir — Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<style>
+
+<!-- PRIMARY SEO -->
+<title>Abdullah Tahir — Data Science Student & C++ Developer | FAST NUCES Lahore</title>
+<meta name="description" content="Portfolio of Abdullah Tahir — BS Data Science student at FAST NUCES Lahore. Built chess AI engines, parking simulators, AI assistants. Certified in AI, Cybersecurity & Data Analytics. Open to internships.">
+<meta name="keywords" content="Abdullah Tahir, Data Science, C++ Developer, FAST NUCES, Lahore, Portfolio, Chess AI, SFML, Pakistan Developer">
+<meta name="author" content="Abdullah Tahir">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#00ffe7">
+<link rel="canonical" href="https://abd-abdullah83.github.io/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abd-abdullah83.github.io/">
+<meta property="og:title" content="Abdullah Tahir — Data Science & C++ Developer Portfolio">
+<meta property="og:description" content="First-year BS Data Science student at FAST NUCES. Built chess AI engines, AI assistants, and parking simulators. 12 certifications. Open to internships.">
+<meta property="og:image" content="https://abd-abdullah83.github.io/photo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Abdullah Tahir Portfolio">
+<meta property="og:locale" content="en_PK">
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abdullah Tahir — Data Science & C++ Developer">
+<meta name="twitter:description" content="BS Data Science @ FAST NUCES. Chess AI, parking simulators, AI assistants. 12 certs. Open to internships in Lahore.">
+<meta name="twitter:image" content="https://abd-abdullah83.github.io/photo.png">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"><style>
 :root {
   --bg: #020818;
   --bg2: #050f2a;
@@ -570,8 +600,47 @@ footer .fl span { color:var(--neon); }
 }
 .proj-card.hidden { display:none; }
 </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdullah Tahir",
+  "url": "https://abd-abdullah83.github.io/portfolio/",
+  "image": "https://abd-abdullah83.github.io/portfolio/photo.png",
+  "jobTitle": "BS Data Science Student & C++ Developer",
+  "description": "First-year BS Data Science student at FAST NUCES Lahore. Specializes in C++, SFML game development, AI projects, and data analytics.",
+  "email": "abdullaht4000@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "FAST National University of Computer and Emerging Sciences",
+    "url": "https://lhr.nu.edu.pk"
+  },
+  "sameAs": [
+    "https://github.com/Abd-Abdullah83",
+    "https://linkedin.com/in/abdullah-tahir-ds",
+    "https://www.fiverr.com/abdullaht_143"
+  ],
+  "knowsAbout": ["C++", "Data Science", "SFML", "Artificial Intelligence", "OOP", "Python", "Web Development"]
+}
+</script>
 </head>
 <body>
+  <noscript>
+  <div style="background:#020818;color:#e2e8f8;font-family:monospace;padding:40px;text-align:center;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+    <h1 style="color:#00ffe7;font-size:2rem;letter-spacing:4px;">ABDULLAH TAHIR</h1>
+    <p style="color:#5a6a8a;">BS Data Science · FAST NUCES Lahore · 2025–2029</p>
+    <p>This portfolio requires JavaScript for the full experience.</p>
+    <p>Contact me directly:</p>
+    <a href="mailto:abdullaht4000@gmail.com" style="color:#00ffe7;">abdullaht4000@gmail.com</a>
+    <a href="https://github.com/Abd-Abdullah83" style="color:#00ffe7;">github.com/Abd-Abdullah83</a>
+    <a href="https://linkedin.com/in/abdullah-tahir-ds" style="color:#00ffe7;">linkedin.com/in/abdullah-tahir-ds</a>
+  </div>
+</noscript>
 <!-- INTRO SPLASH -->
 <div id="intro-splash">
   <div class="splash-logo">AT.</div>
@@ -583,8 +652,7 @@ footer .fl span { color:var(--neon); }
 <div id="cursor-ring"></div>
 
 <!-- CANVAS -->
-<canvas id="hero-canvas"></canvas>
-
+<canvas id="hero-canvas" role="presentation" aria-hidden="true"></canvas>
 <!-- NAV -->
 <nav>
   <div class="nav-logo">AT<span>.</span></div>
@@ -603,7 +671,7 @@ footer .fl span { color:var(--neon); }
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="https://github.com/Abd-Abdullah83" target="_blank" class="nav-cta">GitHub ↗</a></li>
+    <li><a href="https://github.com/Abd-Abdullah83" target="_blank" class="nav-cta" rel="noopener noreferrer" aria-label="Visit Abdullah Tahir's GitHub profile (opens in new tab)">GitHub ↗</a></li>
   </ul>
 </nav>
 
@@ -634,7 +702,12 @@ footer .fl span { color:var(--neon); }
   </div>
   <div class="hero-photo">
     <div style="width:300px;height:360px;border-radius:20px;overflow:hidden;border:2px solid var(--neon);box-shadow:0 0 30px rgba(0,255,231,0.3),0 0 60px rgba(0,255,231,0.1);">
-      <img src="photo.png" alt="Abdullah Tahir" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <img src="photo.png" 
+     alt="Abdullah Tahir — BS Data Science student at FAST NUCES Lahore" 
+     loading="lazy" 
+     width="300" 
+     height="360"
+     style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
     </div>
   </div>
 </div>
@@ -697,7 +770,7 @@ footer .fl span { color:var(--neon); }
 <div class="skill-hex"><div class="skill-icon">🌐</div><div class="skill-name">Web & Tools</div><div class="skill-tags-wrap"><span class="stag">HTML</span><span class="stag">CSS</span><span class="stag">JavaScript</span><span class="stag">Git / GitHub</span></div></div>    <div class="skill-hex"><div class="skill-icon">🚀</div><div class="skill-name">Business</div><div class="skill-tags-wrap"><span class="stag">Strategy</span><span class="stag">SWOT</span><span class="stag">Entrepreneurship</span></div></div>
   </div>
   <div class="bar-skills reveal">
-    <div class="bar-item"><div class="bar-header"><span class="bar-name">C++ & OOP</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+    <div class="bar-item"><div class="bar-header"><span class="bar-name">C++ & OOP</span><span class="bar-pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
     <div class="bar-item"><div class="bar-header"><span class="bar-name">SFML & Game Dev</span><span class="bar-pct">85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
     <div class="bar-item"><div class="bar-header"><span class="bar-name">Data Analytics</span><span class="bar-pct">78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
     <div class="bar-item"><div class="bar-header"><span class="bar-name">Python</span><span class="bar-pct">70%</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
@@ -870,9 +943,6 @@ footer .fl span { color:var(--neon); }
 </section>
 <div class="sec-divider"></div>
 
-<!-- CERTS -->
-
-<div class="sec-divider"></div>
 
 <!-- CERTS -->
 <section id="certs">
@@ -954,7 +1024,7 @@ C++, Python, SFML, OOP, DSA, AI...<br><br>
   <div class="fl">© 2026 <span>Abdullah Tahir</span> — All Rights Reserved</div>
   <div class="fl">FAST NUCES Lahore · BS Data Science · <span>2025–2029</span> · <a href="https://linkedin.com/in/abdullah-tahir-ds" target="_blank" style="color:var(--neon);text-decoration:none;">LinkedIn ↗</a></div>
 </footer>
-<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll back to top" style="
   position:fixed;bottom:32px;right:32px;z-index:200;
   width:46px;height:46px;border-radius:50%;
   background:transparent;border:1px solid rgba(0,255,231,0.3);
