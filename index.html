@@ -928,7 +928,15 @@ C++, Python, SFML, OOP, DSA, AI...<br><br>
   <div class="fl">© 2026 <span>Abdullah Tahir</span> — All Rights Reserved</div>
   <div class="fl">FAST NUCES Lahore · BS Data Science · <span>2025–2029</span> · <a href="https://linkedin.com/in/abdullah-tahir-ds" target="_blank" style="color:var(--neon);text-decoration:none;">LinkedIn ↗</a></div>
 </footer>
-
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
+  position:fixed;bottom:32px;right:32px;z-index:200;
+  width:46px;height:46px;border-radius:50%;
+  background:transparent;border:1px solid rgba(0,255,231,0.3);
+  color:var(--neon);font-size:1.2rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transform:translateY(10px);
+  transition:all 0.3s;
+  box-shadow:0 0 16px rgba(0,255,231,0.15);">↑</button>
 <script>
 // ===== CUSTOM CURSOR =====
 const cursor = document.getElementById('cursor');
@@ -1101,14 +1109,6 @@ scrollTopBtn.addEventListener('mouseleave', () => {
   
 statObs.observe(document.querySelector('.hero-stats'));
 </script>
-  <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
-  position:fixed;bottom:32px;right:32px;z-index:200;
-  width:46px;height:46px;border-radius:50%;
-  background:transparent;border:1px solid rgba(0,255,231,0.3);
-  color:var(--neon);font-size:1.2rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  opacity:0;transform:translateY(10px);
-  transition:all 0.3s;
-  box-shadow:0 0 16px rgba(0,255,231,0.15);">↑</button>
+
 </body>
 </html>
