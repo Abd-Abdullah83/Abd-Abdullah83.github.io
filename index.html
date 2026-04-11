@@ -1076,16 +1076,7 @@ function filterProjects(cat) {
     card.classList.toggle('hidden', cat !== 'all' && !cats.includes(cat));
   });
 }
-  <!-- SCROLL TO TOP -->
-<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
-  position:fixed;bottom:32px;right:32px;z-index:200;
-  width:46px;height:46px;border-radius:50%;
-  background:transparent;border:1px solid rgba(0,255,231,0.3);
-  color:var(--neon);font-size:1.2rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  opacity:0;transform:translateY(10px);
-  transition:all 0.3s;
-  box-shadow:0 0 16px rgba(0,255,231,0.15);">↑</button>
+
     // ===== SCROLL TO TOP BUTTON =====
 const scrollTopBtn = document.getElementById('scroll-top');
 window.addEventListener('scroll', () => {
@@ -1107,7 +1098,17 @@ scrollTopBtn.addEventListener('mouseleave', () => {
   scrollTopBtn.style.color = 'var(--neon)';
   scrollTopBtn.style.boxShadow = '0 0 16px rgba(0,255,231,0.15)';
 });
+  
 statObs.observe(document.querySelector('.hero-stats'));
 </script>
+  <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
+  position:fixed;bottom:32px;right:32px;z-index:200;
+  width:46px;height:46px;border-radius:50%;
+  background:transparent;border:1px solid rgba(0,255,231,0.3);
+  color:var(--neon);font-size:1.2rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transform:translateY(10px);
+  transition:all 0.3s;
+  box-shadow:0 0 16px rgba(0,255,231,0.15);">↑</button>
 </body>
 </html>
