@@ -670,9 +670,17 @@ footer .fl span { color:var(--neon); }
 <section id="projects">
   <div class="sec-eyebrow reveal">03 — Projects</div>
   <div class="sec-title reveal">Things I've <span>Built</span></div>
+
+  <div class="filter-tabs reveal">
+    <button class="ftab active" onclick="filterProjects('all')">All</button>
+    <button class="ftab" onclick="filterProjects('ai')">AI</button>
+    <button class="ftab" onclick="filterProjects('cpp')">C++</button>
+    <button class="ftab" onclick="filterProjects('web')">Web</button>
+  </div>
+
   <div class="projects-grid">
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-" target="_blank">
+    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-" target="_blank" data-cat="ai cpp">
       <div class="proj-visual pv-chess">
         <div class="proj-visual-icon">♛</div>
         <div class="proj-corner">C++ · SFML</div>
@@ -688,7 +696,7 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System" target="_blank">
+    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System" target="_blank" data-cat="cpp">
       <div class="proj-visual pv-park1">
         <div class="proj-visual-icon">🅿️</div>
         <div class="proj-corner">char****</div>
@@ -704,7 +712,7 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System-OOP" target="_blank">
+    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System-OOP" target="_blank" data-cat="cpp">
       <div class="proj-visual pv-park2">
         <div class="proj-visual-icon">🏗️</div>
         <div class="proj-corner">OOP · Rule of 5</div>
@@ -720,7 +728,7 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/TicTacToe-game" target="_blank">
+    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/TicTacToe-game" target="_blank" data-cat="cpp">
       <div class="proj-visual pv-ttt">
         <div class="proj-visual-icon">❌</div>
         <div class="proj-corner">SFML · Console</div>
@@ -736,7 +744,7 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Sudoku" target="_blank">
+    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Sudoku" target="_blank" data-cat="cpp">
       <div class="proj-visual pv-sdk">
         <div class="proj-visual-icon">🔢</div>
         <div class="proj-corner">Backtracking</div>
@@ -752,7 +760,7 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/digital-literacy" target="_blank">
+    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/digital-literacy" target="_blank" data-cat="web">
       <div class="proj-visual" style="background:linear-gradient(135deg,#0a1a14 0%,#0a2a1e 40%,#051a10 100%);">
         <div class="proj-visual-icon">🌐</div>
         <div class="proj-corner">HTML · CSS · JS</div>
@@ -767,54 +775,57 @@ footer .fl span { color:var(--neon); }
         </div>
       </div>
     </a>
-<a class="proj-card reveal" href="https://abd-abdullah83.github.io/Pharmacy/" target="_blank">
-  <div class="proj-visual" style="background:linear-gradient(135deg,#0a1220 0%,#0a1a3a 40%,#051220 100%);">
-    <div class="proj-visual-icon">💊</div>
-    <div class="proj-corner">HTML · CSS · JS</div>
-    <div class="proj-github-btn">⭢ View Live Site</div>
-  </div>
-  <div class="proj-body">
-    <div class="proj-num">PROJECT // 07</div>
-    <div class="proj-name">MediPharm</div>
-    <div class="proj-desc">Pakistan's trusted online pharmacy — 10-page SPA with prescription upload flow, product filtering, cart & checkout, patient dashboard, and full DRAP compliance messaging.</div>
-    <div class="proj-tech-row">
-      <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">SPA Routing</span>
-    </div>
-  </div>
-</a>
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Nova/" target="_blank">
-  <div class="proj-visual" style="background:linear-gradient(135deg,#0d0a1e 0%,#1a0a3a 40%,#0a0a2e 100%);">
-    <div class="proj-visual-icon">✦</div>
-    <div class="proj-corner">HTML · CSS · JS</div>
-    <div class="proj-github-btn">⭢ View Live Site</div>
-  </div>
-  <div class="proj-body">
-    <div class="proj-num">PROJECT // 08</div>
-    <div class="proj-name">Nova — AI Assistant</div>
-    <div class="proj-desc">Sleek personal AI assistant with chat (Gemini 2.0 Flash), real-time weather, task manager, notes, voice input, text-to-speech, and persistent memory — all in a single HTML file.</div>
-    <div class="proj-tech-row">
-      <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Gemini API</span><span class="ptag">SPA</span>
-    </div>
-  </div>
-</a>
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Personal-Ai/" target="_blank">
-  <div class="proj-visual" style="background:linear-gradient(135deg,#0a0f1e 0%,#0a1a3a 40%,#050a18 100%);">
-    <div class="proj-visual-icon">🤖</div>
-    <div class="proj-corner">HTML · CSS · JS</div>
-    <div class="proj-github-btn">⭢ View Live Site</div>
-  </div>
-  <div class="proj-body">
-    <div class="proj-num">PROJECT // 09</div>
-    <div class="proj-name">Personal AI Assistant</div>
-    <div class="proj-desc">Voice & text AI assistant with Gemini 2.5 Flash, real-time weather via Open-Meteo, timer with notifications, speech recognition & synthesis, and smart command routing for calls, maps, WhatsApp, and more.</div>
-    <div class="proj-tech-row">
-      <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Gemini API</span><span class="ptag">Web Speech API</span>
-    </div>
-  </div>
-</a>
+
+    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Pharmacy/" target="_blank" data-cat="web">
+      <div class="proj-visual" style="background:linear-gradient(135deg,#0a1220 0%,#0a1a3a 40%,#051220 100%);">
+        <div class="proj-visual-icon">💊</div>
+        <div class="proj-corner">HTML · CSS · JS</div>
+        <div class="proj-github-btn">⭢ View Live Site</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">PROJECT // 07</div>
+        <div class="proj-name">MediPharm</div>
+        <div class="proj-desc">Pakistan's trusted online pharmacy — 10-page SPA with prescription upload flow, product filtering, cart & checkout, patient dashboard, and full DRAP compliance messaging.</div>
+        <div class="proj-tech-row">
+          <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">SPA Routing</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Nova/" target="_blank" data-cat="ai web">
+      <div class="proj-visual" style="background:linear-gradient(135deg,#0d0a1e 0%,#1a0a3a 40%,#0a0a2e 100%);">
+        <div class="proj-visual-icon">✦</div>
+        <div class="proj-corner">HTML · CSS · JS</div>
+        <div class="proj-github-btn">⭢ View Live Site</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">PROJECT // 08</div>
+        <div class="proj-name">Nova — AI Assistant</div>
+        <div class="proj-desc">Sleek personal AI assistant with chat (Gemini 2.0 Flash), real-time weather, task manager, notes, voice input, text-to-speech, and persistent memory — all in a single HTML file.</div>
+        <div class="proj-tech-row">
+          <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Gemini API</span><span class="ptag">SPA</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Personal-Ai/" target="_blank" data-cat="ai web">
+      <div class="proj-visual" style="background:linear-gradient(135deg,#0a0f1e 0%,#0a1a3a 40%,#050a18 100%);">
+        <div class="proj-visual-icon">🤖</div>
+        <div class="proj-corner">HTML · CSS · JS</div>
+        <div class="proj-github-btn">⭢ View Live Site</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">PROJECT // 09</div>
+        <div class="proj-name">Personal AI Assistant</div>
+        <div class="proj-desc">Voice & text AI assistant with Gemini 2.5 Flash, real-time weather via Open-Meteo, timer with notifications, speech recognition & synthesis, and smart command routing for calls, maps, WhatsApp, and more.</div>
+        <div class="proj-tech-row">
+          <span class="ptag neon">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag">Gemini API</span><span class="ptag">Web Speech API</span>
+        </div>
+      </div>
+    </a>
+
   </div>
 </section>
-
 <div class="sec-divider"></div>
 
 <!-- CERTS -->
