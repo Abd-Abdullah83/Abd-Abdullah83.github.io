@@ -60,7 +60,7 @@
 | 📱 **Fully Responsive** | Mobile hamburger menu, stacked layouts, touch-friendly |
 | 🌑 **Cyberpunk Theme** | Deep navy + neon cyan + purple — dark & immersive |
 | 🔎 **SEO Optimized** | Meta tags, Open Graph, Twitter Card, Schema.org structured data |
-| 📄 **Downloadable CV** | One-click resume download from the hero section |
+| 📄 **Downloadable CV** | One-click resume download from the hero section! |
 
 ---
 
