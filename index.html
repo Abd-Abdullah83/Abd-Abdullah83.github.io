@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+ <meta charset="UTF-8">
+<link rel="preload" as="image" href="photo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://abd-abdullah83.github.io/" />
   <link rel="me" href="https://github.com/Abd-Abdullah83" />
@@ -49,8 +50,9 @@
 <link rel="apple-touch-icon" href="favicon.png">
 
 <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"><style>
-:root {
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">:root {
   --bg: #020818;
   --bg2: #050f2a;
   --neon: #00ffe7;
@@ -240,7 +242,7 @@ nav {
   background:var(--bg);
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:24px;
-  animation: splashOut 0.6s 1.8s ease forwards;
+  animation: splashOut 0.6s 1.0s ease forwards;
   pointer-events:none;
 }
 @keyframes splashOut { to { opacity:0; visibility:hidden; } }
@@ -248,7 +250,7 @@ nav {
   font-family:'Oxanium',sans-serif; font-weight:800; font-size:4rem;
   letter-spacing:8px; color:var(--neon);
   text-shadow:0 0 40px var(--neon), 0 0 80px rgba(0,255,231,0.3);
-  animation: splashPulse 1.8s ease both;
+  animation: splashPulse 1s ease both;
 }
 @keyframes splashPulse {
   0%{opacity:0;transform:scale(0.8);}
@@ -258,7 +260,7 @@ nav {
 .splash-scan {
   width:200px; height:1px;
   background:linear-gradient(90deg, transparent, var(--neon), transparent);
-  animation: scanLine 1.8s ease both;
+  animation: scanLine 1s ease both;
 }
 @keyframes scanLine {
   0%{width:0;opacity:0;}
@@ -268,7 +270,7 @@ nav {
 .splash-text {
   font-family:'Share Tech Mono',monospace; font-size:0.72rem;
   color:var(--muted); letter-spacing:4px;
-  animation: splashFadeIn 1.8s 0.3s ease both;
+  animation: splashFadeIn 1s 0.2s ease both;
 }
 @keyframes splashFadeIn { from{opacity:0} to{opacity:1} }
 
@@ -637,7 +639,10 @@ footer .fl span { color:var(--neon); }
       "Abd-Abdullah83",
        "Abdullah Nuces",
   "Abdullah Fast",
-  "Abdullah"
+  "Abdullah developer",
+  "Abdullah Coder",
+  "System Developer",
+  "Abdullah Ai developer"
     ],
     "url": "https://abd-abdullah83.github.io/",
     "image": "https://abd-abdullah83.github.io/photo.png",
@@ -704,6 +709,20 @@ footer .fl span { color:var(--neon); }
   "inLanguage": "en"
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Chess Master — C++ AI Chess Engine",
+  "description": "Full chess engine with AI opponent via Minimax algorithm, 4 board themes, undo/redo, puzzle mode with ELO rating. Built in C++ and SFML.",
+  "codeRepository": "https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-",
+  "programmingLanguage": ["C++", "SFML"],
+  "author": { "@id": "https://abd-abdullah83.github.io/#person" },
+  "keywords": "chess AI, minimax algorithm, SFML, C++ game development, Pakistan developer"
+}
+</script>
+
 </head>
 <body>
   <noscript>
@@ -874,8 +893,8 @@ footer .fl span { color:var(--neon); }
 
   <div class="projects-grid">
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-" target="_blank" data-cat="ai cpp">
-      <div class="proj-visual pv-chess">
+<a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-" target="_blank" rel="noopener noreferrer" data-cat="ai cpp">    
+  <div class="proj-visual pv-chess">
         <div class="proj-visual-icon">♛</div>
         <div class="proj-corner">C++ · SFML</div>
         <div class="proj-github-btn">⭢ View on GitHub</div>
@@ -890,8 +909,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System" target="_blank" data-cat="cpp">
-      <div class="proj-visual pv-park1">
+<a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System" target="_blank" rel="noopener noreferrer" data-cat="cpp">  
+  <div class="proj-visual pv-park1">
         <div class="proj-visual-icon">🅿️</div>
         <div class="proj-corner">char****</div>
         <div class="proj-github-btn">⭢ View on GitHub</div>
@@ -906,8 +925,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System-OOP" target="_blank" data-cat="cpp">
-      <div class="proj-visual pv-park2">
+<a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Parking-System-OOP" target="_blank" rel="noopener noreferrer" data-cat="cpp">   
+  <div class="proj-visual pv-park2">
         <div class="proj-visual-icon">🏗️</div>
         <div class="proj-corner">OOP · Rule of 5</div>
         <div class="proj-github-btn">⭢ View on GitHub</div>
@@ -922,8 +941,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/TicTacToe-game" target="_blank" data-cat="cpp">
-      <div class="proj-visual pv-ttt">
+<a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/TicTacToe-game" target="_blank" rel="noopener noreferrer" data-cat="cpp">   
+  <div class="proj-visual pv-ttt">
         <div class="proj-visual-icon">❌</div>
         <div class="proj-corner">SFML · Console</div>
         <div class="proj-github-btn">⭢ View on GitHub</div>
@@ -938,8 +957,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Sudoku" target="_blank" data-cat="cpp">
-      <div class="proj-visual pv-sdk">
+<a class="proj-card reveal" href="https://github.com/Abd-Abdullah83/Sudoku" target="_blank" rel="noopener noreferrer" data-cat="cpp">      
+  <div class="proj-visual pv-sdk">
         <div class="proj-visual-icon">🔢</div>
         <div class="proj-corner">Backtracking</div>
         <div class="proj-github-btn">⭢ View on GitHub</div>
@@ -954,8 +973,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/digital-literacy" target="_blank" data-cat="web">
-      <div class="proj-visual" style="background:linear-gradient(135deg,#0a1a14 0%,#0a2a1e 40%,#051a10 100%);">
+<a class="proj-card reveal" href="https://abd-abdullah83.github.io/digital-literacy" target="_blank" rel="noopener noreferrer" data-cat="web">    
+  <div class="proj-visual" style="background:linear-gradient(135deg,#0a1a14 0%,#0a2a1e 40%,#051a10 100%);">
         <div class="proj-visual-icon">🌐</div>
         <div class="proj-corner">HTML · CSS · JS</div>
         <div class="proj-github-btn">⭢ View Live Site</div>
@@ -970,8 +989,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Pharmacy/" target="_blank" data-cat="web">
-      <div class="proj-visual" style="background:linear-gradient(135deg,#0a1220 0%,#0a1a3a 40%,#051220 100%);">
+<a class="proj-card reveal" href="https://abd-abdullah83.github.io/Pharmacy/" target="_blank" rel="noopener noreferrer" data-cat="web">
+  <div class="proj-visual" style="background:linear-gradient(135deg,#0a1220 0%,#0a1a3a 40%,#051220 100%);">
         <div class="proj-visual-icon">💊</div>
         <div class="proj-corner">HTML · CSS · JS</div>
         <div class="proj-github-btn">⭢ View Live Site</div>
@@ -986,8 +1005,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Nova/" target="_blank" data-cat="ai web">
-      <div class="proj-visual" style="background:linear-gradient(135deg,#0d0a1e 0%,#1a0a3a 40%,#0a0a2e 100%);">
+<a class="proj-card reveal" href="https://abd-abdullah83.github.io/Nova/" target="_blank" rel="noopener noreferrer" data-cat="ai web">
+  <div class="proj-visual" style="background:linear-gradient(135deg,#0d0a1e 0%,#1a0a3a 40%,#0a0a2e 100%);">
         <div class="proj-visual-icon">✦</div>
         <div class="proj-corner">HTML · CSS · JS</div>
         <div class="proj-github-btn">⭢ View Live Site</div>
@@ -1002,8 +1021,8 @@ footer .fl span { color:var(--neon); }
       </div>
     </a>
 
-    <a class="proj-card reveal" href="https://abd-abdullah83.github.io/Personal-Ai/" target="_blank" data-cat="ai web">
-      <div class="proj-visual" style="background:linear-gradient(135deg,#0a0f1e 0%,#0a1a3a 40%,#050a18 100%);">
+<a class="proj-card reveal" href="https://abd-abdullah83.github.io/Personal-Ai/" target="_blank" rel="noopener noreferrer" data-cat="ai web">
+  <div class="proj-visual" style="background:linear-gradient(135deg,#0a0f1e 0%,#0a1a3a 40%,#050a18 100%);">
         <div class="proj-visual-icon">🤖</div>
         <div class="proj-corner">HTML · CSS · JS</div>
         <div class="proj-github-btn">⭢ View Live Site</div>
@@ -1017,7 +1036,7 @@ footer .fl span { color:var(--neon); }
         </div>
       </div>
     </a>
-<a class="proj-card reveal" href="https://abd-abdullah83.github.io/NeuralEye/" target="_blank" data-cat="ai web">
+<a class="proj-card reveal" href="https://abd-abdullah83.github.io/NeuralEye/" target="_blank" rel="noopener noreferrer" data-cat="ai web">
   <div class="proj-visual" style="background:linear-gradient(135deg,#0a0d1a 0%,#001a1f 40%,#000d14 100%);">
     <div class="proj-visual-icon">👁️</div>
     <div class="proj-corner">3 AI Engines</div>
@@ -1159,23 +1178,42 @@ function Particle(){
 
 for(let i=0;i<120;i++) particles.push(new Particle());
 
+let animating = true;
+const canvasObs = new IntersectionObserver(([entry]) => {
+  animating = entry.isIntersecting;
+});
+canvasObs.observe(canvas);
+
 function drawParticles(){
-  ctx.clearRect(0,0,W,H);
-  // Connections
-  for(let i=0;i<particles.length;i++){
-    for(let j=i+1;j<particles.length;j++){
-      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
-      const d=Math.sqrt(dx*dx+dy*dy);
-      if(d<140){
-        ctx.beginPath();
-        ctx.strokeStyle=`rgba(0,255,231,${0.12*(1-d/140)})`;
-        ctx.lineWidth=0.5;
-        ctx.moveTo(particles[i].x,particles[i].y);
-        ctx.lineTo(particles[j].x,particles[j].y);
-        ctx.stroke();
+  if(animating){
+    ctx.clearRect(0,0,W,H);
+    for(let i=0;i<particles.length;i++){
+      for(let j=i+1;j<particles.length;j++){
+        const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<140){
+          ctx.beginPath();
+          ctx.strokeStyle=`rgba(0,255,231,${0.12*(1-d/140)})`;
+          ctx.lineWidth=0.5;
+          ctx.moveTo(particles[i].x,particles[i].y);
+          ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.stroke();
+        }
       }
     }
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(0,255,231,${p.alpha})`;
+      ctx.fill();
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0||p.x>W) p.vx*=-1;
+      if(p.y<0||p.y>H) p.vy*=-1;
+    });
   }
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
   
   // Dots
   particles.forEach(p => {
