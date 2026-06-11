@@ -52,8 +52,9 @@
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">:root {
-  --bg: #020818;
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root {  --bg: #020818;
   --bg2: #050f2a;
   --neon: #00ffe7;
   --neon2: #7b61ff;
@@ -1211,21 +1212,6 @@ function drawParticles(){
       if(p.y<0||p.y>H) p.vy*=-1;
     });
   }
-  requestAnimationFrame(drawParticles);
-}
-drawParticles();
-  
-  // Dots
-  particles.forEach(p => {
-    ctx.beginPath();
-    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-    ctx.fillStyle=`rgba(0,255,231,${p.alpha})`;
-    ctx.fill();
-    // move
-    p.x+=p.vx; p.y+=p.vy;
-    if(p.x<0||p.x>W) p.vx*=-1;
-    if(p.y<0||p.y>H) p.vy*=-1;
-  });
   requestAnimationFrame(drawParticles);
 }
 drawParticles();
