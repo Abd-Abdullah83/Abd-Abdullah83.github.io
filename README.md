@@ -2,7 +2,7 @@
 
 # ⚡ Abdullah Tahir — Portfolio
 
-### `< Built from Scratch · No Frameworks · Pure Web Standards /!>`
+### `< Built from Scratch · No Frameworks · Pure Web Standards />`
 
 [![Live Portfolio](https://img.shields.io/badge/🌐%20Live%20Portfolio-abd--abdullah83.github.io-00ffe7?style=for-the-badge&labelColor=020818)](https://abd-abdullah83.github.io)
 [![GitHub](https://img.shields.io/badge/GitHub-Abd--Abdullah83-181717?style=for-the-badge&logo=github)](https://github.com/Abd-Abdullah83)
