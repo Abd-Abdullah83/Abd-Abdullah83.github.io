@@ -40,7 +40,7 @@
 
 | 🎓 CGPA | 📁 Projects | 🏅 Certificates | 🤖 AI Score |
 |:-------:|:-----------:|:---------------:|:-----------:|
-| **3.56** | **9+** | **12** | **93%** |
+| **3.56** | **13+** | **12** | **93%** |
 
 </div>
 
@@ -70,7 +70,7 @@
 01 ── Hero            Name · Role · Stats · CTA buttons · Profile photo
 02 ── About           Bio · Info chips · Education timeline
 03 ── Skills          Skill cards + animated proficiency bars
-04 ── Projects        9 projects — filter by AI / C++ / Web + GitHub & live links
+04 ── Projects        13 projects — filter by AI / C++ / Web + GitHub & live links
 05 ── Certifications  12 badges from Accenture, HP, DigiSkills & more
 06 ── Contact         Links · Live status panel · Interactive terminal widget
 ```
@@ -93,7 +93,6 @@ abd-abdullah83.github.io/
 ---
 
 ## 🚀 Projects
-
 | # | Project | Stack | Type | Link |
 |---|---------|-------|------|------|
 | `01` | ♛ **Chess Master** — Minimax AI, 4 themes, ELO puzzle mode | C++ · SFML | AI + C++ | [GitHub ↗](https://github.com/Abd-Abdullah83/Chess-AI-Puzzles-) |
@@ -101,11 +100,14 @@ abd-abdullah83.github.io/
 | `03` | 🏗️ **Smart Parking OOP** — Rule of Five, merge/transfer | C++ · OOP | C++ | [GitHub ↗](https://github.com/Abd-Abdullah83/Parking-System-OOP) |
 | `04` | ❌ **Tic-Tac-Toe** — Console + SFML, 4 themes, sound FX | C++ · SFML | C++ | [GitHub ↗](https://github.com/Abd-Abdullah83/TicTacToe-game) |
 | `05` | 🔢 **Sudoku** — Backtracking solver, hints, 3 difficulties | C++ · SFML | C++ | [GitHub ↗](https://github.com/Abd-Abdullah83/Sudoku) |
-| `06` | 🌐 **DigiSmart Lahore** — Digital literacy & PECA 2016 quiz | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/digital-literacy) |
-| `07` | 💊 **MediPharm** — 10-page pharmacy SPA, DRAP compliance | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/Pharmacy/) |
-| `08` | ✦ **Nova** — Gemini 2.0 Flash chat, weather, tasks, voice | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/Nova/) |
-| `09` | 🤖 **Personal AI Assistant** — Gemini 2.5 Flash, Web Speech API, smart commands | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/Personal-Ai/) |
-
+| `06` | 🏰 **Tower Defense** — OOP, 5 enemy/tower types, fire mechanics | C++ · SFML · OOP | C++ | [GitHub ↗](https://github.com/Abd-Abdullah83/Defence-Tower-Game-) |
+| `07` | 🌐 **DigiSmart Lahore** — Digital literacy & PECA 2016 quiz | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/digital-literacy) |
+| `08` | 💊 **MediPharm** — 10-page pharmacy SPA, DRAP compliance | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/Pharmacy/) |
+| `09` | ✦ **Nova** — Gemini 2.0 Flash chat, weather, tasks, voice | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/Nova/) |
+| `10` | 🤖 **Personal AI Assistant** — Gemini 2.5 Flash, Web Speech API, smart commands | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/Personal-Ai/) |
+| `11` | 👁️ **NeuralEye** — Deepfake & fake news detection, 3 AI engines | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/NeuralEye/) |
+| `12` | 🕴️ **BinDawood Dulha House** — Groom-wear boutique, sliders | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/BinDawood/) |
+| `13` | 🎀 **Corset Atelier** — Luxury corsetry, custom builder, wishlist | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/Corset-Atelier/) |
 ---
 
 ## 🏅 Certifications
