@@ -174,7 +174,7 @@ GitHub Pages    Free static deployment — zero build step
 
 ## 👨‍💻 About Me
 
-I'm a first-year **BS Data Science** student at **FAST NUCES Lahore** (2025–2029). I build complex systems from scratch — chess engines with Minimax AI opponents, memory-managed parking simulators with raw `char****` pointers, full-stack web platforms, and Gemini-powered AI assistants. Certified in AI, Data Analytics, Cybersecurity, and Entrepreneurship. Aspiring entrepreneur with a mission to build a company of lasting impact.
+I'm a first-year **BS Data Science** student at **FAST NUCES Lahore** (2025–2029). I build complex systems from scratch — chess engines with Minimax AI opponents, memory-managed parking simulators with raw `char****` pointers, e-commerce platforms for real businesses, and Gemini-powered AI assistants. Certified in AI, Data Analytics, Cybersecurity, and Entrepreneurship. Aspiring entrepreneur with a mission to build a company of lasting impact.
 
 ---
 
