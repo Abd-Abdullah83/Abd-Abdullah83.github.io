@@ -108,6 +108,8 @@ abd-abdullah83.github.io/
 | `11` | 👁️ **NeuralEye** — Deepfake & fake news detection, 3 AI engines | HTML · CSS · JS | AI + Web | [Live ↗](https://abd-abdullah83.github.io/NeuralEye/) |
 | `12` | 🕴️ **BinDawood Dulha House** — Groom-wear boutique, sliders | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/BinDawood/) |
 | `13` | 🎀 **Corset Atelier** — Luxury corsetry, custom builder, wishlist | HTML · CSS · JS | Web | [Live ↗](https://abd-abdullah83.github.io/Corset-Atelier/) |
+
+---
 ---
 
 ## 🏅 Certifications
