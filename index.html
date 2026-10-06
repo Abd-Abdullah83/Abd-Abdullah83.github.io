@@ -1476,7 +1476,7 @@ const statObs = new IntersectionObserver((entries)=>{
     if(e.isIntersecting){
       document.querySelectorAll('.hstat-num').forEach(el=>{
         const txt=el.textContent;
-        if(txt.includes('.')){ countUp(el,3.56,''); }
+        if(txt.includes('.')){ countUp(el,3.54,''); }
         else if(txt.includes('+')||txt.includes('%')){
           const n=parseFloat(txt); const s=txt.includes('%')? '%':'+';
           countUp(el,n,s);
